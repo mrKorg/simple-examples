@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <meta name="viewport" content="width=320, user-scalable=no">
+</head>
+
+<body>
+<div class="wrapper">
+    <form action="" method="POST" class="form" id="form">
+        <div class="form__header">
+            <h3 class="form__title is-white-color">
+                Get started today?
+            </h3>
+        </div>
+        <div class="form__body">
+            <div class="form__item">
+                <label for="first-name" class="form__label">
+                    First name
+                </label>
+                <input class="form__input" type="text" name="fist-name" id="first-name" data-validation="text"/>
+                <p class="form__error">Must be a valid First name</p>
+            </div>
+            <div class="form__item">
+                <label for="last-name" class="form__label">
+                    Last name
+                </label>
+                <input class="form__input" type="text" name="fist-name" id="last-name" data-validation="text"/>
+                <p class="form__error">Must be a valid Last name</p>
+            </div>
+            <div class="form__item">
+                <label for="email" class="form__label">
+                    Email address
+                </label>
+                <input class="form__input" type="email" name="email" id="email" data-validation="email"/>
+                <p class="form__error">Must be a valid email ID</p>
+            </div>
+            <div class="form__item">
+                <label for="password" class="form__label">
+                    Password
+                </label>
+                <input class="form__input" type="password" name="password" id="password" data-validation="password"/>
+                <p class="form__error">Only numbers and letters. Min 8 characters long. </p>
+            </div>
+        </div>
+        <div class="form__footer">
+            <button type="submit" class="button is-white-color is-green-bg has-right-icon">
+                Claim Your Free Trial <span class="button__icon">&#10148;</span>
+            </button>
+            <p class="form__terms">
+                You are agreeing to our <a href="#">Terms and Services</a>
+            </p>
+        </div>
+    </form>
+
+    <script src="./assets/script.js" type="text/javascript" charset="utf-8"></script>
+</div>
+</body>
+</html>
